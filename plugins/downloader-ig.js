@@ -6,7 +6,7 @@ import {instagram} from '@xct007/frieren-scraper';
 import {instagramdl} from '@bochilteam/scraper';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
   if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] حط لينك الاستغرام اللي عايز تنزله\nمثل: ${usedPrefix + command}* https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link`;
-  m.reply(`*[❗] جاري التحميل أرجو ان لا يقل عن ثانيتين ولا يزيد عن 10 ثواني...*`);
+  m.reply(`*[❗] جاري التحميل أرجو ان لا يقل عن ثانيتين ولا يزيد عن 10 ثواني....*`);
   try {
     const apiUrll = `https://api.betabotz.org/api/download/igdowloader?url=${encodeURIComponent(args[0])}&apikey=bot-secx3`;
     const responsel = await axios.get(apiUrll);
